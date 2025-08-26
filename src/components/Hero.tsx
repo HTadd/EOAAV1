@@ -22,7 +22,7 @@ const Hero = () => {
                 Find My Sport
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10 rounded-full px-8 py-6 text-lg font-semibold">
+              <Button variant="outline" size="lg" className="border-sport-orange text-sport-orange hover:bg-sport-orange hover:text-white rounded-full px-8 py-6 text-lg font-semibold">
                 <Heart className="mr-2 h-5 w-5" />
                 Connect with Coaches
               </Button>
