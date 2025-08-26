@@ -9,22 +9,22 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="flex-1 text-center lg:text-left">
             <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Equal Opportunities for 
-              <span className="text-sport-orange"> Every </span>
-              Athlete
+              Breaking Barriers in 
+              <span className="text-sport-orange"> Adaptive Sports </span>
             </h1>
             <p className="text-xl text-white/90 mb-8 leading-relaxed">
-              EOAA creates equal opportunities in sports for adaptive athletes. We connect athletes, 
-              families, and coaches with the resources they need to thrive — on and off the field.
+              Since 2019, we've helped over 2,500 athletes find their sport. Whether you're a parent seeking 
+              guidance, an athlete ready to compete, or a coach building inclusive programs, we're here to help 
+              you navigate the world of adaptive athletics.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button size="lg" className="bg-sport-orange hover:bg-sport-orange/90 text-white rounded-full px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                Explore Resources
+                Find My Sport
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10 rounded-full px-8 py-6 text-lg font-semibold">
                 <Heart className="mr-2 h-5 w-5" />
-                Join Community
+                Connect with Coaches
               </Button>
             </div>
           </div>

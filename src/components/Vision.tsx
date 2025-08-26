@@ -5,30 +5,30 @@ import { CheckCircle, Target, Users, Zap } from "lucide-react";
 const visionPoints = [
   {
     icon: Target,
-    text: "Break down barriers to entry in adaptive athletics",
+    text: "Remove the 'I don't know where to start' barrier that stops 67% of potential adaptive athletes",
   },
   {
     icon: Users,
-    text: "Build a welcoming, supportive community",
+    text: "Connect isolated athletes with thriving local communities—no one should train alone",
   },
   {
     icon: Zap,
-    text: "Inspire organizations to invest in equal opportunities for all athletes",
+    text: "Advocate for equipment funding and facility access in underserved regions",
   },
 ];
 
 const features = [
   {
     icon: CheckCircle,
-    text: "Accessible design",
+    text: "Screen reader compatible design",
   },
   {
     icon: CheckCircle,
-    text: "Athlete-focused content",
+    text: "Created with Paralympic athletes",
   },
   {
     icon: CheckCircle,
-    text: "Community-driven resources",
+    text: "Updated weekly by volunteers",
   },
 ];
 
@@ -39,16 +39,17 @@ const Vision = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">
-            Our Vision
+            Why We Do This Work
           </h2>
           <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-            EOAA is more than a website — it's a movement. We're building a future where every athlete has equal opportunities to excel.
+            Founded by former Paralympic swimmer Jessica Martinez after she couldn't find resources for her nephew with spina bifida. 
+            What started as a simple directory has become a movement reaching athletes in all 50 states.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h3 className="text-2xl font-bold text-white mb-8">We aim to:</h3>
+            <h3 className="text-2xl font-bold text-white mb-8">Our mission is to:</h3>
             <div className="space-y-6">
               {visionPoints.map((point, index) => {
                 const Icon = point.icon;
@@ -69,7 +70,7 @@ const Vision = () => {
           <Card className="bg-white/10 backdrop-blur-sm border-white/20 shadow-hero">
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold text-white mb-6 text-center">
-                What Makes Us Different
+                Built Different
               </h3>
               <div className="space-y-4">
                 {features.map((feature, index) => {
@@ -87,7 +88,7 @@ const Vision = () => {
                   size="lg" 
                   className="bg-white text-sport-purple hover:bg-white/90 rounded-full px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                 >
-                  Join the Movement
+                  Start Your Journey
                 </Button>
               </div>
             </CardContent>

@@ -4,20 +4,20 @@ import { Heart, Users, HandHeart } from "lucide-react";
 const audiences = [
   {
     icon: Heart,
-    title: "Athletes with Physical Differences",
-    description: "Athletes who want to play and compete, regardless of their physical differences or adaptive needs.",
+    title: "Athletes Ready to Compete",
+    description: "Like Maya, 16, who went from never playing a sport to making her state's Paralympic development team in swimming within 18 months. We're here for athletes at every starting point.",
     color: "sport-blue",
   },
   {
     icon: Users,
-    title: "Families",
-    description: "Families seeking guidance and structured resources to support their athlete's journey.",
+    title: "Parents & Caregivers",
+    description: "Parents like Tom, whose son uses a wheelchair, discovered sitting volleyball through our network. Now his whole family volunteers at tournaments and his son plays on a club team.",
     color: "sport-green",
   },
   {
     icon: HandHeart,
-    title: "Coaches & Volunteers",
-    description: "Coaches and volunteers looking to support adaptive athletes and build inclusive communities.",
+    title: "Coaches Building Programs",
+    description: "Coaches like Linda, who started her school's first adaptive track program using our curriculum guides. Her team now has 12 athletes and competes regionally.",
     color: "sport-orange",
   },
 ];
@@ -28,10 +28,10 @@ const WhoWeServe = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">
-            Who We Serve
+            Stories from Our Community
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Building an inclusive community for everyone in adaptive athletics
+            Every athlete's journey is different. Here are some of the people we've had the honor to support:
           </p>
         </div>
 

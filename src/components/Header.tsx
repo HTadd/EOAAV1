@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
-import { Trophy, Users, BookOpen, Play } from "lucide-react";
+import { Trophy, Eye, Menu } from "lucide-react";
+import { useColorBlind } from "@/contexts/ColorBlindContext";
 
 const Header = () => {
+  const { isColorBlindMode, toggleColorBlindMode } = useColorBlind();
+
   return (
     <header className="bg-gradient-hero shadow-hero sticky top-0 z-50">
       <div className="container mx-auto px-6 py-4">
@@ -18,19 +21,30 @@ const Header = () => {
           
           <div className="hidden md:flex items-center space-x-6">
             <a href="#services" className="text-white hover:text-white/80 transition-colors font-medium">
-              Services
+              Resources
             </a>
             <a href="#about" className="text-white hover:text-white/80 transition-colors font-medium">
-              About
+              Who We Are
             </a>
             <a href="#contact" className="text-white hover:text-white/80 transition-colors font-medium">
-              Contact
+              Get Involved
             </a>
           </div>
 
-          <Button variant="secondary" className="rounded-full px-6">
-            Get Started
-          </Button>
+          <div className="flex items-center space-x-3">
+            <Button
+              onClick={toggleColorBlindMode}
+              variant="ghost"
+              size="sm"
+              className={`rounded-full p-2 text-white hover:bg-white/10 ${isColorBlindMode ? 'bg-white/20' : ''}`}
+              title="Toggle Color Blind Friendly Mode"
+            >
+              <Eye className="h-5 w-5" />
+            </Button>
+            <Button variant="secondary" className="rounded-full px-6">
+              Find Resources
+            </Button>
+          </div>
         </nav>
       </div>
     </header>
