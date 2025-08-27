@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Trophy, Eye, Menu } from "lucide-react";
 import { useColorBlind } from "@/contexts/ColorBlindContext";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const { isColorBlindMode, toggleColorBlindMode } = useColorBlind();
@@ -20,15 +21,15 @@ const Header = () => {
           </div>
           
           <div className="hidden md:flex items-center space-x-6">
-            <a href="#services" className="text-white hover:text-white/80 transition-colors font-medium">
+            <Link to="/resources" className="text-white hover:text-white/80 transition-colors font-medium">
               Resources
-            </a>
-            <a href="#about" className="text-white hover:text-white/80 transition-colors font-medium">
+            </Link>
+            <Link to="/who-we-are" className="text-white hover:text-white/80 transition-colors font-medium">
               Who We Are
-            </a>
-            <a href="#contact" className="text-white hover:text-white/80 transition-colors font-medium">
+            </Link>
+            <Link to="/get-involved" className="text-white hover:text-white/80 transition-colors font-medium">
               Get Involved
-            </a>
+            </Link>
           </div>
 
           <div className="flex items-center space-x-3">
@@ -41,9 +42,11 @@ const Header = () => {
             >
               <Eye className="h-5 w-5" />
             </Button>
-            <Button variant="secondary" className="rounded-full px-6">
-              Find Resources
-            </Button>
+            <Link to="/resources">
+              <Button variant="secondary" className="rounded-full px-6">
+                Find Resources
+              </Button>
+            </Link>
           </div>
         </nav>
       </div>

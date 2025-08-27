@@ -5,6 +5,9 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ColorBlindProvider } from "@/contexts/ColorBlindContext";
 import Index from "./pages/Index";
+import Resources from "./pages/Resources";
+import WhoWeAre from "./pages/WhoWeAre";
+import GetInvolved from "./pages/GetInvolved";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -18,6 +21,9 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/resources" element={<Resources />} />
+            <Route path="/who-we-are" element={<WhoWeAre />} />
+            <Route path="/get-involved" element={<GetInvolved />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
