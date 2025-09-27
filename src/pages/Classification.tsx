@@ -119,10 +119,11 @@ const Classification = () => {
           </h2>
           
           <Tabs defaultValue="track-field" className="w-full">
-            <TabsList className="grid w-full grid-cols-4 mb-8">
+            <TabsList className="grid w-full grid-cols-5 mb-8">
               <TabsTrigger value="track-field">Track & Field</TabsTrigger>
               <TabsTrigger value="swimming">Swimming</TabsTrigger>
               <TabsTrigger value="cycling">Cycling</TabsTrigger>
+              <TabsTrigger value="shooting">Shooting</TabsTrigger>
               <TabsTrigger value="team-sports">Team Sports</TabsTrigger>
             </TabsList>
             
@@ -245,6 +246,86 @@ const Classification = () => {
                           <span className="text-sm">Handcycle (spinal impairment)</span>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+            
+            <TabsContent value="shooting">
+              <Card className="bg-gradient-card shadow-card border-0">
+                <CardHeader>
+                  <CardTitle className="text-sport-blue">Shooting Classifications</CardTitle>
+                  <CardDescription>Air rifle, pistol, and mixed team event classifications</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-6">
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div className="bg-sport-blue/10 p-6 rounded-xl">
+                        <div className="flex items-center gap-3 mb-4">
+                          <Badge className="bg-sport-blue text-white text-lg px-4 py-2">SH1</Badge>
+                          <h4 className="font-bold text-sport-blue text-lg">Rifle & Pistol</h4>
+                        </div>
+                        <p className="text-foreground mb-4">
+                          Athletes who can support the weight of the firearm themselves and do not require 
+                          a shooting stand. This includes athletes with lower limb amputations, spinal cord 
+                          injuries, or other impairments that don't affect upper body function.
+                        </p>
+                        <div className="space-y-2">
+                          <div className="text-sm text-sport-blue font-medium">Events include:</div>
+                          <ul className="text-sm text-foreground space-y-1">
+                            <li>• 10m Air Rifle Standing</li>
+                            <li>• 10m Air Pistol</li>
+                            <li>• 50m Rifle 3 Positions</li>
+                            <li>• 25m Pistol</li>
+                          </ul>
+                        </div>
+                      </div>
+                      
+                      <div className="bg-sport-green/10 p-6 rounded-xl">
+                        <div className="flex items-center gap-3 mb-4">
+                          <Badge className="bg-sport-green text-white text-lg px-4 py-2">SH2</Badge>
+                          <h4 className="font-bold text-sport-green text-lg">Supported Shooting</h4>
+                        </div>
+                        <p className="text-foreground mb-4">
+                          Athletes who cannot support the weight of the firearm due to upper limb impairments 
+                          and require a shooting stand or support. This includes athletes with limited arm 
+                          function, muscle weakness, or coordination difficulties.
+                        </p>
+                        <div className="space-y-2">
+                          <div className="text-sm text-sport-green font-medium">Events include:</div>
+                          <ul className="text-sm text-foreground space-y-1">
+                            <li>• 10m Air Rifle Standing (with support)</li>
+                            <li>• 50m Rifle Prone</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-sport-orange/10 p-6 rounded-xl">
+                      <h4 className="font-bold text-sport-orange mb-3 flex items-center gap-2">
+                        <Users className="h-5 w-5" />
+                        Mixed Team Events
+                      </h4>
+                      <p className="text-foreground mb-3">
+                        Paralympic shooting also features mixed team events where athletes from both 
+                        SH1 and SH2 classifications can compete together, promoting inclusivity and 
+                        teamwork across different impairment types.
+                      </p>
+                      <div className="flex flex-wrap gap-2">
+                        <Badge variant="outline" className="bg-sport-blue/10">SH1 + SH2 Teams</Badge>
+                        <Badge variant="outline" className="bg-sport-green/10">10m Air Rifle Mixed</Badge>
+                        <Badge variant="outline" className="bg-sport-orange/10">25m Pistol Mixed</Badge>
+                      </div>
+                    </div>
+                    
+                    <div className="border-l-4 border-sport-purple pl-4">
+                      <p className="text-foreground text-sm">
+                        <strong>Classification Process:</strong> Athletes undergo medical and technical evaluation 
+                        by certified classifiers who assess their functional ability to handle firearms safely 
+                        and effectively. The classification ensures fair competition while maintaining the highest 
+                        safety standards in Paralympic shooting sports.
+                      </p>
                     </div>
                   </div>
                 </CardContent>
