@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Target, Users, Zap } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const visionPoints = [
   {
@@ -33,6 +34,7 @@ const features = [
 ];
 
 const Vision = () => {
+  const navigate = useNavigate();
   return (
     <section className="py-20 bg-gradient-accent relative overflow-hidden">
       <div className="absolute inset-0 bg-black/10"></div>
@@ -87,6 +89,7 @@ const Vision = () => {
                 <Button 
                   size="lg" 
                   className="bg-white text-sport-purple hover:bg-white/90 rounded-full px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                  onClick={() => navigate("/start")}
                 >
                   Start Your Journey
                 </Button>

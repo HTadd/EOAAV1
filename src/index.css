@@ -43,12 +43,13 @@ All colors MUST be HSL.
     --sport-green: 170 75% 50%;
     --sport-orange: 25 95% 60%;
     --sport-purple: 260 75% 65%;
+    --sport-gold: 42 95% 56%;
     --warm-gray: 220 15% 45%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--sport-blue)), hsl(var(--sport-green)));
+    --gradient-hero: linear-gradient(to right, hsl(var(--sport-blue)), hsl(var(--sport-purple)));
     --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 30% 98%));
-    --gradient-accent: linear-gradient(135deg, hsl(var(--sport-orange)), hsl(var(--sport-purple)));
+    --gradient-accent: linear-gradient(to right, hsl(var(--sport-blue)), hsl(var(--sport-purple)));
 
     /* Shadows */
     --shadow-card: 0 4px 20px -2px hsl(var(--sport-blue) / 0.15);
@@ -71,8 +72,8 @@ All colors MUST be HSL.
     --secondary: 0 0% 30%;
     --accent: 45 90% 55%;
     
-    --gradient-hero: linear-gradient(135deg, hsl(220 50% 40%), hsl(0 0% 30%));
-    --gradient-accent: linear-gradient(135deg, hsl(45 90% 55%), hsl(0 0% 60%));
+    --gradient-hero: linear-gradient(to right, hsl(220 50% 40%), hsl(0 0% 60%));
+    --gradient-accent: linear-gradient(to right, hsl(220 50% 40%), hsl(0 0% 60%));
   }
 
   :root {
@@ -129,6 +130,22 @@ All colors MUST be HSL.
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Darker sport color variables so gradients become more muted in dark mode */
+    --sport-blue: 210 30% 30%;
+    --sport-green: 170 28% 28%;
+    --sport-orange: 28 80% 30%;
+    --sport-purple: 260 38% 30%;
+    --sport-gold: 38 80% 30%;
+
+    /* Stronger dark-mode gradients using the darker sport colors and slightly increased opacity */
+    --gradient-hero: linear-gradient(to right, hsl(var(--sport-blue) / 0.95), hsl(var(--sport-purple) / 0.95));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card) / 0.95), hsl(var(--sidebar-background) / 0.95));
+    --gradient-accent: linear-gradient(to right, hsl(var(--sport-blue) / 0.95), hsl(var(--sport-purple) / 0.95));
+
+    /* Darker shadows for better contrast in dark mode */
+    --shadow-card: 0 4px 20px -2px hsl(var(--sport-blue) / 0.35);
+    --shadow-hero: 0 10px 40px -10px hsl(var(--sport-blue) / 0.45);
   }
 }
 

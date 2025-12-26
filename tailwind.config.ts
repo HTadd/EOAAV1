@@ -56,6 +56,7 @@ export default {
 				'sport-green': 'hsl(var(--sport-green))',
 				'sport-orange': 'hsl(var(--sport-orange))',
 				'sport-purple': 'hsl(var(--sport-purple))',
+				'sport-gold': 'hsl(var(--sport-gold))',
 				'warm-gray': 'hsl(var(--warm-gray))',
 			},
 			borderRadius: {

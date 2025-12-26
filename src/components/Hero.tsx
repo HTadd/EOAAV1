@@ -8,11 +8,11 @@ const Hero = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="flex-1 text-center lg:text-left">
-            <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
               Breaking Barriers in 
               <span className="text-sport-orange"> Adaptive Sports </span>
             </h1>
-            <p className="text-xl text-white/90 mb-8 leading-relaxed">
+            <p className="text-xl text-foreground/90 mb-8 leading-relaxed">
               Since 2019, we've helped over 2,500 athletes find their sport. Whether you're a parent seeking 
               guidance, an athlete ready to compete, or a coach building inclusive programs, we're here to help 
               you navigate the world of adaptive athletics.

@@ -1,19 +1,16 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Eye, Users, Activity, Brain, User, ListChecks } from "lucide-react";
+import WSPSQuickNav from "@/components/WSPSQuickNav";
+import WPAQuickNav from "@/components/WPAQuickNav";
 
 const Classification = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
-      
-      <main className="container mx-auto px-6 py-12">
-        {/* Hero Section */}
-        <div className="text-center mb-16">
+    <>
+      {/* Hero Section */}
+      <div className="text-center mb-16">
           <h1 className="text-5xl font-bold text-sport-blue mb-6">
             Classification Made <span className="text-sport-orange">Simple</span>
           </h1>
@@ -178,6 +175,9 @@ const Classification = () => {
                       </div>
                     </div>
                   </div>
+
+                  {/* WPA Quick Navigation - focused on running/track sections */}
+                  <WPAQuickNav />
                 </CardContent>
               </Card>
             </TabsContent>
@@ -327,6 +327,9 @@ const Classification = () => {
                         safety standards in Paralympic shooting sports.
                       </p>
                     </div>
+
+                    {/* WSPS Quick Navigation */}
+                    <WSPSQuickNav />
                   </div>
                 </CardContent>
               </Card>
@@ -494,11 +497,8 @@ const Classification = () => {
             </CardContent>
           </Card>
         </section>
-      </main>
-      
-      <Footer />
-    </div>
-  );
-};
-
-export default Classification;
+      </>
+    );
+  };
+  
+  export default Classification;

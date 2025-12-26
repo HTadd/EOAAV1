@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Trophy, BookOpen, Users, Play } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const services = [
   {
@@ -34,6 +35,19 @@ const services = [
 ];
 
 const Services = () => {
+  const navigate = useNavigate();
+
+  const handleLearnMore = (title: string) => {
+    if (title === "Local Competitions & Events") {
+      navigate("/programs");
+    } else if (title === "Classification Made Simple") {
+      navigate("/classification");
+    } else if (title === "Verified Coach Network") {
+      navigate("/mentorship");
+    } else if (title === "Training Videos That Work") {
+      navigate("/toolkit");
+    }
+  };
   return (
     <section id="services" className="py-20 bg-muted/30">
       <div className="container mx-auto px-6">
@@ -66,12 +80,13 @@ const Services = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-center">
-                  <p className="text-muted-foreground leading-relaxed mb-6">
+                  <p className="text-card-foreground leading-relaxed mb-6">
                     {service.description}
                   </p>
                   <Button 
                     variant="outline" 
                     className={`rounded-full border-${service.color} text-${service.color} hover:bg-${service.color} hover:text-white transition-all duration-300`}
+                    onClick={() => handleLearnMore(service.title)}
                   >
                     Learn More
                   </Button>
